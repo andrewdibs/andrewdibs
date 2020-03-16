@@ -1,10 +1,9 @@
-## My personal website 
+## My Personal Website 
 
-Currently in progress. 
-Making for dev ops practice and experience. 
-Will include full personal portfolio, projects, etc...
-Boostrapped using React
-
+Currently in progress. <br />
+Making for dev ops front end practice and experience. <br />
+Will include full personal portfolio, projects, etc...<br />
+Bootstrapped using React<br />
 
 
 ## Available Scripts
