@@ -1,2 +1,0 @@
-# andrewdibs
-My personal website 
