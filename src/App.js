@@ -6,19 +6,22 @@ import {Home} from './Home';
 import {About} from './About';
 import {Projects} from './Projects';
 import {Page404} from './Page404';
+import {Layout} from './components/Layout';
 
 class App extends Component{
   render(){
     return(
       <React.Fragment>
-        <Router>
-          <Switch>
-            <Route exact path= "/" component={Home} />
-            <Route path= "/" component={About} />
-            <Route path= "/" component={Projects} />
-            <Route component={Page404} />
-          </Switch>
-        </Router>
+        <Layout>
+          <Router>
+            <Switch>
+              <Route exact path= "/" component={Home} />
+              <Route path= "/about" component={About} />
+              <Route path= "/projects" component={Projects} />
+              <Route component={Page404} />
+            </Switch>
+          </Router>
+        </Layout>
       </React.Fragment>
     );
   }
