@@ -7,11 +7,16 @@ import {About} from './About';
 import {Projects} from './Projects';
 import {Page404} from './Page404';
 import {Layout} from './components/Layout';
+import {NavigationBar as NavBar} from './components/NavBar';
+import {Jumbotron} from './components/Jumbotron';
+
 
 class App extends Component{
   render(){
     return(
       <React.Fragment>
+        <NavBar/>
+        <Jumbotron/>
         <Layout>
           <Router>
             <Switch>
