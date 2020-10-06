@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import linkedicon from "../assets/linkedin.png";
+import githubicon from "../assets/GitHub-Mark.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class Navbar extends Component {
@@ -75,9 +76,29 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                Footnote
+                Section 5
               </Link>
             </li>
+            <li className="nav-item">
+              <Link>
+                <a href="https://www.linkedin.com/in/andrew-dibella-961289172/"><img
+                  src={linkedicon}
+                  className="nav-logo"
+                  alt="Logo"
+                  onClick="https://www.linkedin.com/in/andrew-dibella-961289172/"
+                /></a>
+              </Link>
+          </li>
+          <li className="nav-item">
+              <Link>
+                <a href="https://github.com/andrewdibs"><img
+                  src={githubicon}
+                  className="nav-logo"
+                  alt="Logo"
+                  onClick="https://github.com/andrewdibs"
+                /></a>
+              </Link>
+          </li>
           </ul>
         </div>
       </nav>
