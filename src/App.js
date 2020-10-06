@@ -1,36 +1,83 @@
-import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'; 
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Home} from './Home';
-import {About} from './About';
-import {Projects} from './Projects';
-import {Page404} from './Page404';
-import {Layout} from './components/Layout';
-import {NavigationBar as NavBar} from './components/NavBar';
-import {Jumbotron} from './components/Jumbotron';
+import React, { Component } from "react";
+import {Document} from "react-pdf";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Section from "./components/Section";
+import resume from "./assets/resume.pdf"
+
+// html layout of each section
+var aboutSection = 
+  <div>
+    <p>Write a paragraph about myself and add a picture</p>
+  </div>
+
+var projectSection = 
+  <div>
+    
+  </div>
 
 
-class App extends Component{
-  render(){
-    return(
-      <React.Fragment>
-        <NavBar/>
-        <Jumbotron/>
-        <Layout>
-          <Router>
-            <Switch>
-              <Route exact path= "/" component={Home} />
-              <Route path= "/about" component={About} />
-              <Route path= "/projects" component={Projects} />
-              <Route component={Page404} />
-            </Switch>
-          </Router>
-        </Layout>
-      </React.Fragment>
+
+var resumeSection = 
+<div>
+    <Document 
+      file={resume}
+      onLoadSuccess="true"
+    >
+      
+    </Document>
+  
+</div>
+
+
+var shreddingSection = 
+<div>
+  
+</div>
+
+
+class App  extends Component{
+  render() {
+    return (
+      <div className="App">
+        <Navbar />
+        <Section
+          title="Hey this is me"
+          subtitle={"a quick overview of myself and interests"}
+          dark={true}
+          id="section1"
+          content={aboutSection}
+        />
+        <Section
+          title="Projects"
+          subtitle={""}
+          dark={false}
+          id="section2"
+          content={projectSection}
+        />
+        <Section
+          title="Resume"
+          subtitle={""}
+          dark={true}
+          id="section3"
+          content={resumeSection}
+        /> 
+        <Section
+          title="Shredding"
+          subtitle={""}
+          dark={false}
+          id="section4"
+          content={shreddingSection}
+        />
+        <Section
+          title="idk yet..."
+          subtitle={""}
+          dark={true}
+          id="section5"
+        />
+      </div>
     );
   }
 }
-
 
 export default App;
