@@ -21,8 +21,8 @@
 }
 
 .image{
-  height: 480px;
-  width: 400px;
+  height: 560px;
+  width: 460px;
   
 }
 
@@ -59,6 +59,9 @@
   color: #333;
 }
 
+.resumeimg ,.image{
+  border:12px solid #fafafa;
+}
 
 .nav-item:hover {
   color: black;
@@ -79,4 +82,21 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
+}
+
+.grid-container {
+  display: flex;
+  padding-top: 30px;
+  
+}
+
+.grid-item {
+  padding-left: 1rem;
+  color: #333;
+  height: 200px;
+  width: 500px;
+  padding-left: 1rem;
+  background-color: #fafafa;
+  border:12px solid #333;
+  border-radius: 13px;
 }

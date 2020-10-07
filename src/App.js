@@ -18,17 +18,28 @@ var aboutSection =
 
 var projectSection = 
   <div>
-    
+    <div className="grid-container">
+      <div className="grid-item">1</div>
+      <div className="grid-item">2</div>
+      <div className="grid-item">3</div>
+    </div>
+    <div className="grid-container">
+      <div className="grid-item">4</div>
+      <div className="grid-item">5</div>
+      <div className="grid-item">6</div>
+    </div>
   </div>
+    
+  
 
 
 
 var resumeSection = 
-<div>
-<img src={resume}
-      className="resumeimg"
-      alt="img failed to load: myself and sister Mia"
-    />
+<div className="imageBackground">
+  <img src={resume}
+    className="resumeimg"
+    alt="img failed to load: resume"
+  />
   
 </div>
 
