@@ -1,14 +1,19 @@
 import React, { Component } from "react";
-import {Document} from "react-pdf";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
-import resume from "./assets/resume.pdf"
+import resume from "./assets/resume.jpg";
+import meNmia from "./assets/meNmia.jpeg";
 
 // html layout of each section
 var aboutSection = 
-  <div>
-    <p>Write a paragraph about myself and add a picture</p>
+  <div className="flexbox-container">
+    <img src={meNmia}
+      className="image"
+      alt="img failed to load: myself and sister Mia"
+    />
+    <p className="aboutme">Write a paragraph about myself and add a picture</p>
+    
   </div>
 
 var projectSection = 
@@ -20,12 +25,10 @@ var projectSection =
 
 var resumeSection = 
 <div>
-    <Document 
-      file={resume}
-      onLoadSuccess="true"
-    >
-      
-    </Document>
+<img src={resume}
+      className="resumeimg"
+      alt="img failed to load: myself and sister Mia"
+    />
   
 </div>
 

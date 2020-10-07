@@ -12,13 +12,20 @@ export default class Navbar extends Component {
     return (
       <nav className="nav" id="navbar">
         <div className="nav-content">
-          <img
-            src={linkedicon}
-            className="nav-logo"
-            alt="Logo"
-            onClick={this.scrollToTop}
-          />
-          <ul className="nav-items">
+        
+        <ul className="nav-items">
+          <li className="nav-item">
+              <Link  
+                spy={true}
+                smooth={true}
+                className="brandname"
+                offset={-70}
+                duration={500}
+                onClick={this.scrollToTop}
+              >
+                andrewdibs
+              </Link>
+            </li>
             <li className="nav-item">
               <Link
                 activeClass="active"
