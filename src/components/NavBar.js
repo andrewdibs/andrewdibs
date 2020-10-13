@@ -88,7 +88,7 @@ export default class Navbar extends Component {
             </li>
             <li className="nav-item">
               <Link>
-                <a href="https://www.linkedin.com/in/andrew-dibella-961289172/"><img
+                <a href="https://www.linkedin.com/in/andrew-dibella-961289172/" rel="noopener noreferrer" target="_blank"><img
                   src={linkedicon}
                   className="nav-logo"
                   alt="Logo"
@@ -98,7 +98,7 @@ export default class Navbar extends Component {
           </li>
           <li className="nav-item">
               <Link>
-                <a href="https://github.com/andrewdibs"><img
+                <a href="https://github.com/andrewdibs" rel="noopener noreferrer" target="_blank"><img
                   src={githubicon}
                   className="nav-logo"
                   alt="Logo"
