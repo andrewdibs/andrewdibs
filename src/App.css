@@ -25,6 +25,7 @@
 .image{
   height: 500px;
   width: 430px;
+  
 }
 
 .flexbox-container{
@@ -97,6 +98,14 @@
   
 }
 
+.grid-item:hover {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-color: black;
+  z-index: -1;
+}
+
 .grid-item {
   color: #fafafa;
   height: 200px;
@@ -106,9 +115,7 @@
   border:12px solid #333;
   border-radius: 13px;
 }
-.grid-item:hover{
-  opacity: 65%;
-}
+
 
 .row {
   display: flex;

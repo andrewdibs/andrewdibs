@@ -50,7 +50,7 @@ var projectSection =
       </a>
 
       <a href="https://github.com/andrewdibs/Capping-2020" rel="noopener noreferrer" target="_blank">
-        <div className="grid-item">
+        <div className="grid-item grow">
           <h4 className="project-title">ContactTracer</h4>
           <h5>SwiftUI - Java</h5>
           <h6>a COVID-19 contact tracing application that alerts you if you have been in contact with another positive for the virus</h6>
