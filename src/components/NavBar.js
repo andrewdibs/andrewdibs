@@ -59,7 +59,7 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                Resume
+                Digital Art 
               </Link>
             </li>
             <li className="nav-item">

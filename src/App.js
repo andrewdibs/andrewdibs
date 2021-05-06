@@ -3,38 +3,34 @@ import { ReactPhotoCollage } from "react-photo-collage";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
-import marist from "./assets/marist.jpg"
-import railbutter from "./assets/railbutter.jpeg";
-import resume from "./assets/resume.jpg";
+import marist from "./assets/marist.jpg";
 import meNmia from "./assets/meNmia.jpeg";
-import grab from "./assets/grab.jpeg";
-import fly from "./assets/flyingsquirrel.jpeg";
 import baby from "./assets/baby.jpeg";
-import headshot from "./assets/headshot.jpeg";
-import backs from "./assets/backs.jpeg";
 import view from "./assets/view.jpeg";
 import dog from "./assets/dog.jpeg";
-import lift from "./assets/lift.jpeg";
 import pumpkin from "./assets/pumpkin.jpeg";
 import top from "./assets/top.jpeg";
 import meNmeg from "./assets/meNmeg.jpeg";
+import animation from "./assets/animationmovie.gif";
+import collage from "./assets/Collage.jpg";
+import portrait from "./assets/DiBella-digitalSelf-Portrait.png";
+import logo from "./assets/logo.jpg";
 
 // html layout of each section
 var aboutSection = 
   <div className="flexbox-container">
-    <img src={headshot}
+    <img src={baby}
       className="image"
       alt="img failed to load"
     />
-    <p className="aboutme">Welcome! My name is Andrew DiBella, I am a senior at Marist College studying 
+    <p className="aboutme">Welcome! My name is Andrew DiBella, I am a graduate from Marist College with a degree in  
     Software Development and Cyber Security. I'm an aspiring developer who has loved coding ever since I created my first
-    Game of Thrones themed text-based adventure game. Through my Computer Science major, I have been able to grow as a programmer 
+    Game of Thrones themed text-based adventure game. Through my Computer Science education, I have been able to grow as a programmer 
     and learn to develop applications like this website! Some of my favorite projects have been the ones that have challenged me the most, 
     like my COVID-19 Contact Tracer and my mock 6502a operating system. <br/>
     <br/>
-    While I have come a long way, I am excited to continue learning by working for a company that is innovative and 
-    allows me to pursue my passion. After graduation, I can't wait to use all that I've learned to build impactful projects and 
-    try to make the world a little bit better :) </p>
+    Now, I am beginning my post graduate life as a Infrastructure Senior Tech Analyst for Citibank. I am very excited to see where this path 
+    takes me and look foward to getting a start on my career.  </p>
     
   </div>
 
@@ -90,16 +86,23 @@ var projectSection =
   </div>
     
   
+    const digsetting = {
+      width: '1000px',
+      height: ['500px', '470px'],
+      layout: [1,3],
+      photos: [
+        { src: animation},
+        { src: portrait},
+        { src: logo},
+        { src: collage}
+      ],
+      showNumOfRemainingPhotos: false
+    };
 
 
-
-var resumeSection = 
-  <div className="imageBackground">
-    <img src={resume}
-      className="resumeimg"
-      alt="img failed to load: resume"
-    />
-    
+var digitalSection = 
+  <div>
+    <ReactPhotoCollage {...digsetting} />
   </div>
 
 
@@ -110,14 +113,9 @@ const setting = {
   photos: [
     { src: marist },
     { src: baby },
-    { src: railbutter },
     { src: meNmia },
-    { src: grab},
-    { src: backs },
-    { src: fly},
     { src: dog},
     { src: view },
-    { src: lift},
     { src: pumpkin},
     { src: meNmeg},
     { src: top}
@@ -159,11 +157,11 @@ class App  extends Component{
           content={projectSection}
         />
         <Section
-          title="Resume"
+          title="Digital Art"
           subtitle={""}
           dark={true}
           id="section3"
-          content={resumeSection}
+          content={digitalSection}
         /> 
         <Section
           title="Memories"
