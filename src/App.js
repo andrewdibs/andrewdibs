@@ -5,8 +5,11 @@ import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import marist from "./assets/marist.jpg";
 import meNmia from "./assets/meNmia.jpeg";
-import baby from "./assets/baby.jpeg";
+import baby from "./assets/baby.jpg";
 import view from "./assets/view.jpeg";
+import peth from "./assets/nut4.JPG";
+import wideview from "./assets/wide.jpeg";
+import look from "./assets/look.jpeg";
 import dog from "./assets/dog.jpeg";
 import pumpkin from "./assets/pumpkin.jpeg";
 import top from "./assets/top.jpeg";
@@ -112,13 +115,16 @@ const setting = {
   layout: [1,2, 4, 2, 4],
   photos: [
     { src: marist },
-    { src: baby },
-    { src: meNmia },
     { src: dog},
     { src: view },
+    { src: meNmia },
+    { src: peth },
     { src: pumpkin},
     { src: meNmeg},
-    { src: top}
+    { src: top},
+    { src: look},
+    { src: wideview}
+
   ],
   showNumOfRemainingPhotos: false
 };
