@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import linkedicon from "../assets/linkedin.png";
+import linkedicon from "../assets/linked.png";
 import githubicon from "../assets/GitHub-Mark.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 

@@ -23,6 +23,7 @@
 
 
 .image{
+  position: relative;
   height: 500px;
   width: 430px;
   

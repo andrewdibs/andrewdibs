@@ -4,19 +4,19 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import marist from "./assets/marist.jpg";
-import meNmia from "./assets/meNmia.jpeg";
+import meNmia from "./assets/meNmia.jpg";
 import baby from "./assets/baby.jpg";
-import view from "./assets/view.jpeg";
+import view from "./assets/view.jpg";
 import peth from "./assets/nut4.JPG";
-import wideview from "./assets/wide.jpeg";
-import look from "./assets/look.jpeg";
-import dog from "./assets/dog.jpeg";
-import pumpkin from "./assets/pumpkin.jpeg";
-import top from "./assets/top.jpeg";
-import meNmeg from "./assets/meNmeg.jpeg";
+import wideview from "./assets/wide.jpg";
+import look from "./assets/look.jpg";
+import dog from "./assets/dog.jpg";
+import pumpkin from "./assets/pumpkin.jpg";
+import top from "./assets/top.jpg";
+import meNmeg from "./assets/meNmeg.jpg";
 import animation from "./assets/animationmovie.gif";
 import collage from "./assets/Collage.jpg";
-import portrait from "./assets/DiBella-digitalSelf-Portrait.png";
+import portrait from "./assets/DiBella-digitalSelf-Portrait.jpg";
 import logo from "./assets/logo.jpg";
 
 // html layout of each section
